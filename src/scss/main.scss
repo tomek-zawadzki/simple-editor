@@ -1,4 +1,28 @@
 @import "~normalize.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap");
 @import "_variables";
+@import "modules/cite.scss";
+@import "modules/editor.scss";
 
+$fontFamily: "Roboto", sans-serif;
+
+:root {
+  --heading-color: #f0544f;
+  --button-color: #008dd5;
+}
+
+body {
+  font-family: $fontFamily;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 296px;
+  background-color: #1c1e3a;
+}
+
+.container-button {
+  margin-top: 16px;
+  width: 442px;
+  display: flex;
+  justify-content: flex-end;
+}

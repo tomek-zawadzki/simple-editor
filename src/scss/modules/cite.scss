@@ -1,0 +1,25 @@
+@mixin button {
+    border-radius: 4px;
+    height: 40px;
+    width: 83px;
+    background-color: var(--button-color);
+    color: #fff;
+  }
+
+.cite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__heading {
+      font-size: 36px;
+      color: var(--heading-color);
+      margin-bottom: 0px;
+    }
+    &__text {
+      font-size: 24px;
+      color: #D81E5B;
+    }
+    &__button {
+      @include button();
+    }
+  }

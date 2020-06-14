@@ -1,0 +1,30 @@
+@mixin button {
+    border-radius: 4px;
+    height: 40px;
+    width: 83px;
+    background-color: var(--button-color);
+    color: #fff;
+  }
+.editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 94px;
+    &__heading {
+      font-size: 48px;
+      margin-bottom: 16px;
+      color: var(--heading-color);
+    }
+    &__textarea {
+      width: 436px;
+      height: 213px;
+    }
+    &__button {
+      @include button();
+      margin-left: 28px;
+      &-save {
+          background-color: #f0544f;
+      }
+    }
+  }
+  
